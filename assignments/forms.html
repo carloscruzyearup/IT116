@@ -11,27 +11,74 @@
 	</head>
 
 	<body>
-		<h1>First form</h1>
-		<!-- tes -->
-		<!-- a form is an interactive element for inputting information -->
-		<form action="carlos">
+		<section>
+			<h1>First form</h1>
+			<!-- a form is an interactive element for inputting information -->
+			<form action="./completed.html">
+				<p>
+				<!-- the for attribute is to link a label with an input element -->
+				<label for="username">Enter a name: </label>
+				<!-- the input element for the username it has the type attr. placeholder attr. and name attr. -->
+				<input id="username" type="text" placeholder="Username" name="username">
+				</p>
+				<p>
+				<!-- this label is for the password input element it needs to have a completely different for attr. -->
+				<label for="password">Enter a password: </label>
+				<!-- input element tag needs its own unique id -->
+				<input id="password" type="text" placeholder="Password" name="password">
+				</p>
+				<button>Submit</button>
+			</form>
+		</section>
 
-			<p>
-			<!-- the for attribute is to link a label with an input element -->
-			<label for="username">Enter a name: </label>
-			<!-- the input element for the username it has the type attr. placeholder attr. and name attr. -->
-			<input id="username" type="text" placeholder="Username" name="username">
-			</p>
-			<p>
-			<!-- this label is for the password input element it needs to have a completely different for attr. -->
-			<label for="password">Enter a password: </label>
-			<!-- input element tag needs its own unique id -->
-			<input id="password" type="text" placeholder="Password" name="password">
-			</p>
-		</form>
+		<hr>
 
+		<section>
+			<h1>Query Strings</h1>
+			<form action="https://www.reddit.com/search">
+				<label for="reddit">Search Reddit: </label>
+				<input id="reddit" type="text" placeholder="Search anything..." name="q">
+				<button>Submit</button>
+			</form>
+			<form action="https://www.youtube.com/results?search_query">
+				<label for="youtube">Search Youtube: </label>
+				<input id="youtube" type="text" placeholder="Search anything..." name="q">
+				<button>Submit</button>
+			</form>
+			<form action="https://www.google.com/search?">
+				<label for="google">Search Google: </label>
+				<input id="google" type="text" placeholder="Search anything..." name="q">
+				<button>Submit</button>
+			</form>
+		</section>
+
+		<hr>
+
+		<section>
+			<h1>Checkbox and Radio workout</h1>
+			<form>
+				<input type="checkbox" name="agree_tos" id="agree">
+				<label for="agree">I agree to sell my soul fo a dollah</label>
+				<p>
+				<input type="radio" name="size" id="s" value="s">
+				<label for="s">Small</label>
+				</p>
+				<p>
+				<input type="radio" name="size" id="m" value="m">
+				<label for="m">Medium</label>
+				</p>
+				<p>
+				<input type="radio" name="size" id="l" value="l">
+				<label for="l">Large</label>
+				</p>
+			</form>
+		</section>
+<script>
+function myFunction() {
+  document.getElementById("myForm").reset();
+}
+</script>
 	</body>
 
-	alsdjf
 </html>
 
