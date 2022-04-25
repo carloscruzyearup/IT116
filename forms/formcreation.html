@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>HTML Form Creation</title>
+
+	</head>
+
+	<body>
+		<section>
+			<h1>Please fill out the form below</h1>
+			<!-- action is the url the form's query string will be sent to upon hitting submit -->
+			<form action="/bananas">
+				<p>
+				<label for="first">First Name: </label>
+				<!-- text input with requirements for length, required -->
+				<input type="text" name="first" id="first" placeholder="First Name" minlength="3" maxlength="10" required>
+				</p>
+				<p>
+				<label for="last">Last Name: </label>
+				<!-- text input with requirements for length, required -->
+				<input type="text" name="last" id="last" placeholder="Last Name" minlength="3" maxlength="10" required>
+				</p>
+				<p>
+				<label for="food">Which food would you like to eat?</label>
+				<!-- combobox with  3 seperate values for the food value pair -->
+				<select id="food" name="food" required>
+					<!-- value defines what will be sent in the query string -->
+					<option value="burger">Burger</option>
+					<option value="hotdog">Hotdog</option>
+					<option value="pizza">Pizza</option>
+				</select>
+				</p>
+				<p>
+				<!-- label for textarea -->
+				<label for="allergies">Do you have any allergies?</label>
+				<!-- textarea that is not resizable and is not required -->
+				<textarea id="allergies" name="allergies" placeholder="List allergies here" rows="5" cols="50" style="resize:none;"></textarea>
+				</p>
+				<!-- submit button -->
+				<button>Send</button>
+			</form>
+		</section>
+
+	</body>
+
+</html>
+

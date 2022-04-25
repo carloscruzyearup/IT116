@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>Forms</title>
+
+	</head>
+
+	<body>
+		<section>
+			<h1>First form</h1>
+			<!-- a form is an interactive element for inputting information -->
+			<form action="./completed.html">
+				<p>
+				<!-- the for attribute is to link a label with an input element -->
+				<label for="username">Enter a name: </label>
+				<!-- the input element for the username it has the type attr. placeholder attr. and name attr. -->
+				<input id="username" type="text" placeholder="Username" name="username">
+				</p>
+				<p>
+				<!-- this label is for the password input element it needs to have a completely different for attr. -->
+				<label for="password">Enter a password: </label>
+				<!-- input element tag needs its own unique id -->
+				<input id="password" type="text" placeholder="Password" name="password">
+				</p>
+				<button>Submit</button>
+				<input type="reset">
+			</form>
+		</section>
+
+		<hr>
+
+		<!-- section for query string demonstration -->
+		<section>
+			<h1>Query Strings</h1>
+			<!-- a group of 3 forms that will demonstrate using the action attribute of the forms to redirect a query to a different url -->
+			<form action="https://www.reddit.com/search">
+				<!-- type text allows text entry, placeholder is the inital value, name is the name of the value when sent to the query string -->
+				<input id="reddit" type="text" placeholder="Search anything..." name="q">
+				<!-- submit input will initate the action for the form -->
+				<input type="submit" value="Search Reddit">
+				<input type="reset">
+			</form>
+			<form action="https://www.youtube.com/results?search_query">
+				<input id="youtube" type="text" placeholder="Search anything..." name="q">
+				<input type="submit" value="Search Youtube">
+				<input type="reset">
+			</form>
+			<form action="https://www.google.com/search?">
+				<input id="google" type="text" placeholder="Search anything..." name="q">
+				<input type="submit" value="Search Google">
+				<input type="reset">
+			</form>
+		</section>
+
+		<hr>
+
+		<!-- new section for checkboxes and radio buttons -->
+		<section>
+			<h1>Checkbox and Radio workout</h1>
+			<form action="/bananas">
+
+				<p>
+				<!-- the radio buttons in the form are mutually exclusive as a by product of being in the same form I am assuming -->
+				<input type="radio" name="size" id="s" value="s">
+				<!-- label bound to each radio button -->
+				<label for="s">One dollah</label>
+				</p>
+				<p>
+				<input type="radio" name="size" id="m" value="m">
+				<label for="m">Two dollah</label>
+				</p>
+				<p>
+				<input type="radio" name="size" id="l" value="l">
+				<label for="l">Three dollah</label>
+				</p>
+
+				<p>
+				<!-- checkbox element that functions as a binary flag for options -->
+				<input type="checkbox" name="agree_tos" id="agree">
+				<label for="agree">I agree to sell my soul fo the amount stated above</label>
+				</p>
+
+				<!--the block element for the the combo box-->
+				<p>
+				<!-- bind the label to the combo box -->
+				<label for="colors">What is your favorite color?</label>
+				<!-- select element for the combobox -->
+				<select name="colors" id="colors">
+					<!-- set the options available for the combo box -->
+					<option value="Red">Red</option>
+					<option value="Green">Green</option>
+					<option value="Blue">Blue</option>
+				</select>
+				</p>
+
+				<!-- new block element for a scroll bar -->
+				<p>
+				<!-- BIND THE LABEL -->
+				<label for="scroll">How cool are you?</label>
+				<!-- the range of values of the scrollbar can be determined by manipulating the attributes min and max  -->
+				<input type="range" name="scrollbar" min="5" max="10" id="scroll">
+				</p>
+
+				<p>
+				<!-- label bound to the textarea -->
+				<label for="spclreq">Special Requests: </label>
+				<!-- textarea element with attributes defining its size and the default text -->
+				<textarea id="spclreq" name="specialrequests" rows="5" cols="50" placeholder="extra cheese and lettuce; hold the mayo&#10;This has autocorrect btw" wrap="hard" autocorrect="on" style="resize:none;"></textarea>
+				</p>
+
+				<button>Submit</button>
+				<input type="reset">
+			</form>
+		</section>
+
+		<!-- valdiation -->
+		<section>
+			<form action="/bananas">
+
+				<p>
+				<!-- a textbox that is required -->
+				<label for="username">Username: </label>
+				<input type="text" name="textbox" id="username" required>
+				<!-- a password type input that has a required minlength the maxlength and is required -->
+				<label for="passwd">Password: </label>
+				<input type="password" minlength="3" maxlength="15" name="password" id="passwd" required>
+				</p>
+				<p>
+				<!-- an input element expecting a valid email address and is required -->
+				<label for="email">Email: </label>
+				<input type="email" id="email" required>
+				</p>
+				<!-- the final submission button for the validation form -->
+				<button>Validation button</button>
+				<input type="reset">
+			</form>
+		</section>
+	</body>
+</html>
