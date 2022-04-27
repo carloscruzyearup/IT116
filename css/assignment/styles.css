@@ -1,0 +1,22 @@
+/* setting the default font for all elements '*' */
+*	{ font-family: sans-serif; }
+
+/* selecting all h1 elements and setting the color to green */
+h1	{ color: green; }
+
+/* selecting all h2 elements and setting the color to purple */
+h2	{ color: purple; }
+
+/* selecting all p elements and setting the color to pink and the background color to green */
+p	{
+	color: pink;
+	background-color: green;
+}
+
+/* selecting all button elements */
+button {
+	/* setting the color to white */
+	color: white;
+	/* setting the background color to blue */
+	background-color: blue;
+}
