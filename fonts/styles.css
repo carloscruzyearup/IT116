@@ -1,0 +1,21 @@
+h1, h2, h3, h4 {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 100px;
+	background: lightgray;
+}
+
+h2, h3, h4 {
+	color: darkred;
+	background: pink;
+}
+
+p {
+	font-family: monospace;
+	font-weight: thin;
+	line-height: 1;
+	letter-spacing: 0.1em;
+}

@@ -1,0 +1,10 @@
+p {
+	color: gray;
+	font-weight: thin;
+}
+
+#coloredbutton {
+	font-weight: bold;
+	color: white;
+	background-color: red;
+}
