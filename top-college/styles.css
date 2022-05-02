@@ -1,0 +1,27 @@
+/* setting global font */
+* { font-family: sans-serif; }
+
+/* class selectors to color the individual items by class */
+.crimson { color: darkred; }
+.greenish { color: green; }
+.yellowish { color: #ffcb05; }
+.red { color: red; }
+.burnt { color: darkorange; }
+
+
+/* selecting all button elements */
+button {
+	color: white;
+	/* the background-color rule in this won't do anything */
+	background-color: black;
+	font-weight: bold;
+}
+
+/* because we are selecting the buttons in a more specific manner (thru id) which means these rules will override more general rules */
+#yes {
+	background-color: green;
+}
+
+#no {
+	background-color: red;
+}
