@@ -1,0 +1,25 @@
+header {
+	color: pink;
+}
+
+/* selecting all a elements that are descendants of header, immediate or not */
+header a {
+	font-size: 30px;
+	color: pink;
+}
+
+/* selecting all a elements that are descendants of hobbies id element */
+#hobbies a {
+	color: orange;
+}
+
+/* selecting all a elements that have state in the href attribute and are descendants of schools id element */
+#schools [href*="state"] {
+	color: purple;
+}
+
+/* selecting all a elements that have central in the href attribute and are descendants of schools id element */
+#schools [href*="central"] {
+	color: maroon;
+}
+
