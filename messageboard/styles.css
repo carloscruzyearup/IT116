@@ -3,11 +3,18 @@
 	font-family: sans-serif;
 }
 
-/* */
+
+/* nested psuedo element */
+h3::first-letter {
+	font-size: 30px;
+}
+
+/* sets the background color for the entire page */
 body {
 	background-color: beige;
 }
 
+/* selects all buttons */
 button {
 	font-size: 15px;
 	border-radius: 4px;
@@ -16,40 +23,68 @@ button {
 	color: #7d5224;
 }
 
+/* selects both elements with the login and search id */
 #login, #search {
 	color: black;
 	background-color: lightgray;
 }
 
+/* selects all button elements with either the upvote or downvote class */
 button.downvote, button.upvote {
 	border: 0px;
 	border-radius: 15px;
 }
 
+/* selects all button elements with downvote class psuedo class hover */
 button.downvote:hover {
 	background-color: pink;
 	color: red;
 }
 
+/* selects all button elements with upvote class psuedo class hover */
 button.upvote:hover {
 	background-color: lightgreen;
 	color: green;
 }
 
+/* nested psuedo classes any button:active psuedo class that is a descendant of element with post class*/
+.post button:active {
+	background-color: white;
+	color: gray;
+}
+
+#login:active, #search:active, #signup:active {
+	background-color: white;
+	color: gray;
+	border-color: gray;
+}
+
+/* regular class selector */
 .tag {
 	color: red;
 }
 
+/* regular id selector */
 #signup {
 	background-color: darkblue;
 	color: lightblue;
 	border: 1px solid blue;
 }
 
+/* the following rules will apply to any <a> that is a descendant of an element with class "post" */
 .post a {
 	color: #7d5224;
 	border-radius: 3px;
 	padding: 2px;
+}
+
+/* nested psuedo element edits all firstlines of p which are descendants of class firstline */
+.firstline p:first-line {
+	color: green;
+}
+
+a[href*="google"] {
+	color: green;
 }
 
 /* descendent selector all a elements that are descendents of footer
