@@ -1,0 +1,7 @@
+SVG						5/17/22 1244 pm 
+argument parameter		5/24/22 1239 pm 
+IAAS PAAS SAAS			5/25/22 1237 pm 
+simple storage service 	1251 pm
+cold storage 			119 pm 
+RDS						5/31/22 1240 pm
+SQL						5/31/22 1247 pm
