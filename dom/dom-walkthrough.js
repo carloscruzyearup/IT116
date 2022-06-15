@@ -174,22 +174,30 @@ let lastItem = document.querySelector('.list-group-item:last-child');
 lastItem.style.border = 'solid 50px red';
 
 
+// select all title elements
 let titleItems = document.querySelectorAll( 'title' );
 console.log(titleItems);
+// change the textContent of the first element in the array
 titleItems[0].textContent = 'Hello Carlos';
 
+// select all odd li elements
 let odd = document.querySelectorAll('li:nth-child(odd)');
+// select all even li elements
 let even = document.querySelectorAll('li:nth-child(even)');
 
 console.log(odd);
 
+// a for loop to iterate through all the odd li elements
 for ( i = 0; i < odd.length; i++ )
 {
+	// change the text of element
 	odd[i].textContent = "Odd <li> here!";
 }
 
+// a for loop to iterate through all the even li elements
 for ( i = 0; i < even.length; i++ )
 {
+	// change the text of the element
 	even[i].textContent = "Even <li> here!";
 }
 
